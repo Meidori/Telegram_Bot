@@ -4,10 +4,12 @@ import random
 from list1 import list1
 from list2 import list2
 import os
+from flask import Flask, request
 
 BOT_TOKEN = os.environ['TOKEN']
 APP_URL = f'https://vitaljaheroku.herokuapp.com/{BOT_TOKEN}'
 client = telebot.TeleBot(BOT_TOKEN)
+server = Flask(__name__)
 
 
 @client.message_handler(commands=['start'])     # Команда /start
