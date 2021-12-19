@@ -4,6 +4,8 @@ import random
 from list1 import list1
 from list2 import list2
 
+TOKEN = ''
+
 
 client = telebot.TeleBot(TOKEN)
 
