@@ -3,8 +3,9 @@ from telebot import types
 import random
 from list1 import list1
 from list2 import list2
+import os
 
-TOKEN = ''
+BOT_TOKEN = os.environ['TOKEN']
 
 
 client = telebot.TeleBot(TOKEN)
