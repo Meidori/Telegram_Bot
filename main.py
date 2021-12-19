@@ -6,8 +6,7 @@ from list2 import list2
 import os
 
 BOT_TOKEN = os.environ['TOKEN']
-
-
+APP_URL = f'https://vitaljaheroku.herokuapp.com/{BOT_TOKEN}'
 client = telebot.TeleBot(BOT_TOKEN)
 
 
