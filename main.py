@@ -8,7 +8,7 @@ import os
 BOT_TOKEN = os.environ['TOKEN']
 
 
-client = telebot.TeleBot(TOKEN)
+client = telebot.TeleBot(BOT_TOKEN)
 
 
 @client.message_handler(commands=['start'])     # Команда /start
