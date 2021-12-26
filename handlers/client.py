@@ -23,7 +23,8 @@ async def command_start(message: types.Message):
 
 async def command_commands(message: types.Message):
     await client.send_message(message.from_user.id, texts.commands, reply_markup=types.ReplyKeyboardRemove())
-    await client.send_message(message.from_user.id, texts.commands, reply_markup=keyboard_commands)
+    await client.send_message(message.from_user.id, 'Лучше использовать клавиатуру, а не текстовые команды',
+                              reply_markup=keyboard_commands)
 
 
 async def command_info(message: types.Message):
